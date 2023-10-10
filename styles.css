@@ -1,16 +1,63 @@
 *{font-family: 'Courier New', Courier, monospace; color}
 body {padding: 0; margin:0; }
+#container {display: flex; flex-direction: column;}
 h1 {font-size: 50px;}
+h2 {text-align: center;}
+
 /*FOOTER-NAV*/
-header {display: flex; justify-content: space-between;}
-#logo {max-width: 50px; max-height: 50px; padding: 15px 0 0 15px}
+header {display: flex; justify-content: space-between; background-color: #ffe4c4;}
+#logo {max-width: 100px; max-height: 100px; padding: 0 0 0 15px}
 ul {display: flex;justify-content: space-between; }
-li {padding:15px; text-decoration: none; list-style-type: none; font-weight: bold;}
-li:hover {cursor: pointer; background-color:#A6ACBD; color:#E1E5EF;}
+li {padding:15px; margin-top: 10px; text-decoration: none; list-style-type: none; font-weight: bold;}
+li:hover {cursor: pointer; background-color:white; color:black;}
+
 /*MAIN TOP CONTENT*/
-.main-cont {padding: 20px 100px 20px 100px; display: flex; align-items: center;}
-#main-monkey {max-width: 300px; max-height: 300px;}
+.main-cont {padding: 50px 200px 30px 200px; display: flex; justify-content: center; align-items: center;}
+#main-monkey {max-width: 300px; max-height: 300px;border-radius: 5%;}
 .monkey-friends {display: flex;}
-.middle-monkeys {max-width: 200px; max-height: 200px;object-fit: cover; width: 100%;text-align: center;}
+.main-text {flex-basis: 400px; margin-right: 100px;}
+
+/*FADE1*/
+.fade1 {height:90px ;background: rgb(255,228,196);
+    background: linear-gradient(0deg, rgba(255,228,196,1) 0%, rgba(255,255,255,1) 100%);}
+
+/*MIDDLE MONKEYS*/
+.middle-info {display: block; align-items: center; background-color: #ffe4c4;}
+.middle-info > h2 {padding: 20px 0 50px 0; margin:0}
+.middle-monkeys {height: 300px; width: 300px;text-align: center; object-fit: cover; border:solid 8px #D6AD7B; border-radius: 5%; }
+.monkey-friends { display:flex; justify-content: space-around;padding-bottom: 50px;}
 .bold {font-style: oblique;font-weight: bold;}
-figcaption {text-align: center;}
+figcaption {text-align: center; font-size: 20px;}
+
+/*FADE2*/
+.fade2 {height:90px;
+    background: rgb(255,228,196);
+    background: linear-gradient(180deg, rgba(255,228,196,1) 0%, rgba(255,255,255,1) 100%);}
+
+/*MIDDLE QUITE*/
+
+.middle-quote {display:flex ; flex-direction: column; align-items:center;text-align: center;}
+#quote {max-width: 600px; font-size: 35px; font-style: italic;}
+#author {margin-left: 380px; margin-top: -10px;}
+
+/*SIGN UP*/
+
+.sign-up {background-color: #ffe4c4;
+    align-items: center; 
+    border: auto;
+    font-size: 20px;
+    padding: 50px;
+margin:auto ;
+margin-top: 50px;
+    max-width: 500px;
+    border-radius: 5%;
+    text-align: center;}
+input {}
+
+/*FOOTER*/
+footer {position: absolute;
+    width: 100%;
+    background-color:#ffe4c4 ;
+    align-items: center;
+    text-align: center; 
+    margin-top: 80px;}
